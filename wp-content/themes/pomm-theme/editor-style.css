@@ -1,0 +1,45 @@
+/* These styles are used only in the backend editor */
+
+/* Here you can override any CSS which causes layout or visibility problems in the editor, */
+/* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
+
+.green-title {
+  color: #2aae4a;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.button {
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 #7d7d7d;
+  padding: 7px 10px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.button.red {
+  background: #ef4b53;
+}
+
+
+.separator {
+  width: 100%;
+  height: 40px;
+  background: url(./dist/images/flower.png) center center no-repeat;
+  background-size: auto 100%;
+  margin: 20px 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li img {
+  border: 5px solid #fff7b1;
+  margin: 0 7px 10px 0;
+  float: left;
+}
+ul li:last-child img {
+  margin-right: 0;
+}

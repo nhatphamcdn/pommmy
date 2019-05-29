@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Green title",
+        "selector": "h2",
+        "classes": "green-title",
+        "type": "item"
+    }
+]
