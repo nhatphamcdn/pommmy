@@ -7,7 +7,7 @@
  * @package Knight
  */
 
-get_header(); ?>
+?>
     <style>
         @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
 
@@ -293,5 +293,3 @@ get_header(); ?>
 
         }, 1000);
     </script>
-<?php
-get_footer();
