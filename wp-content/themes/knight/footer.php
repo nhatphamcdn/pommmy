@@ -162,37 +162,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="footer-branding">
-                        <div class="site-branding">
-                            <?php
-                            knight_the_custom_logo();
-                            if (is_front_page() && is_home()) : ?>
-                                <span class="site-title primary-font">
-                                            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                                                <?php bloginfo('name'); ?>
-                                            </a>
-                                        </span>
-                            <?php else : ?>
-                                <span class="site-title primary-font">
-                                            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                                                <?php bloginfo('name'); ?>
-                                            </a>
-                                        </span>
-                            <?php
-                            endif;
-                            $description = get_bloginfo('description', 'display');
-                            if ($description || is_customize_preview()) : ?>
-                                <p class="site-description">
-                                    <span><?php echo esc_html($description); ?></span>
-                                </p>
-                            <?php
-                            endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
                     <div class="scroll-up alt-bgcolor">
                         <i class="ion-ios-arrow-up text-light"></i>
                     </div>
