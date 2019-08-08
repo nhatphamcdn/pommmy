@@ -20,27 +20,25 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'heroku_d5b978ce0cd886d');
+define( 'DB_NAME', 'heroku_d5b978ce0cd886d' );//heroku_d5b978ce0cd886d
 
 /** MySQL database username */
-define('DB_USER', 'baaf6669d187ed');
+define( 'DB_USER', 'baaf6669d187ed' );//baaf6669d187ed
 
 /** MySQL database password */
-define('DB_PASSWORD', '23a325d0');
+define( 'DB_PASSWORD', '23a325d0' );//23a325d0
 
 /** MySQL hostname */
-define('DB_HOST', 'us-cdbr-iron-east-02.cleardb.net');
+define( 'DB_HOST', 'us-cdbr-iron-east-02.cleardb.net' );//us-cdbr-iron-east-02.cleardb.net
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define( 'DB_COLLATE', '' );
 
 define('WP_POST_REVISIONS', 4);
 define('FS_METHOD', 'direct');
-define( 'WP_MEMORY_LIMIT', '128M' );
-
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -50,14 +48,14 @@ define( 'WP_MEMORY_LIMIT', '128M' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '-o_ck<7n/|Jv4:HYhH]6m?;)wY&PQ6^<vJz@0+ako=>]rMha3$zXs5!cT>(>z0_Y');
-define('SECURE_AUTH_KEY',  'Z-Yi)#80b`q>AJ&sA&nPQWrAHg/ypHjF3nCk<r(8UQ/S5L:wce6j++^sZ=ZY(hIG');
-define('LOGGED_IN_KEY',    '_H,?zR%VPdhI2SBWGJnK&L-Gj%-3o$Udo$^/r/ph{#rqz$+{gijkr,&t$=$taGs6');
-define('NONCE_KEY',        '4S_V+[sNwF-}BR86V].phqKknA8A@$6i]MI-G{2[e1)@-peZx#_`oow1,gpVs@Od');
-define('AUTH_SALT',        'tPXJ&UgK[M_Zp_f,hIfLZ{BE-2HUepB?mJ0wF:|M{{M$ZD7$Z%`OtD^5yJ]6TYLf');
-define('SECURE_AUTH_SALT', 'E;.b[_,p`>tNb:sT=IfYJu.5x202=#9Onh+RT|444a{PBga114vBB=eeaZ=()czQ');
-define('LOGGED_IN_SALT',   '5s(1[b:Yn>Y!uUnS;{UNkW`+3I`VCH>kBF=Zjc#!B}Bt3P>ZwFvei2398R-;8FL5');
-define('NONCE_SALT',       'm8{aH)1+QRa`@5^xF[8/6V[_u]+$nb+jO!?`uZaff_2U>>sRvwk?SvQn%u^dAxWS');
+define( 'AUTH_KEY',         '?_%5!g9(vej{I^[r,qj]Fqs,LkP>_G/P>nMl+PdL(4HD@GCjkJ/OY<tXw8M.ruz:' );
+define( 'SECURE_AUTH_KEY',  'uozDUe>]8jqq)S9|h`%pkhg%|!>t>ZU7|CPt4H3_j5qb(3l$u(-u>?W4y:MO1;Br' );
+define( 'LOGGED_IN_KEY',    '7~g.cXF7a5#JN3ijOQiI6PPM&?fLD;sF89?;~]s.orWs2d6ir,xLFZ(S~54ie3Q5' );
+define( 'NONCE_KEY',        '!$WC*!@= `Re4FU3:1qlG}>G/3W3.]j}Pr)?{}-:ku$SA;r~.t<CUyw_@mj8.l}h' );
+define( 'AUTH_SALT',        '7Z57 cluG;~#u%%5%sVYQXuw_XS3BJd#-3^eKoV3w7*n*.S8sA6L:Xze5eea1f1U' );
+define( 'SECURE_AUTH_SALT', '?}K7hK wxQ;Cce5.ayh%OPW%k67[=Ni}e.Z;r<}CZc^Xy|/fMc_2fL:Uwouv^=,,' );
+define( 'LOGGED_IN_SALT',   '!pv<Pe:>@iEl}|LmI$15;DsH{gpiC+`LU7Q.&9[&M}tFtpYw;V$2j`#0,P2q n9#' );
+define( 'NONCE_SALT',       ',&mLd/[]AKd%>7-u6RxF5RH3HXh!:Q(e/q+3Hl}0):jUl1bjftA^=<fbz:O`fs;h' );
 
 /**#@-*/
 
@@ -67,7 +65,7 @@ define('NONCE_SALT',       'm8{aH)1+QRa`@5^xF[8/6V[_u]+$nb+jO!?`uZaff_2U>>sRvwk?
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -81,13 +79,14 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define( 'WP_DEBUG', false );
 
-/* That's all, stop editing! Happy blogging. */
+/* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+}
 
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
+require_once( ABSPATH . 'wp-settings.php' );
